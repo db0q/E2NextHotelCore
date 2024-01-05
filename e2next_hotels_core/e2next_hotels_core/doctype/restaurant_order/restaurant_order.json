@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{order_date}-{table_number}-{####}",
+ "creation": "2024-01-03 14:22:47.364237",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_lf7y",
+  "order_date",
+  "table_number",
+  "amended_from",
+  "order_items_tab",
+  "items",
+  "item"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_lf7y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Restaurant Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Datetime",
+   "label": "Order Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "table_number",
+   "fieldtype": "Link",
+   "label": "Table Number",
+   "options": "Restaurant Table Number"
+  },
+  {
+   "fieldname": "order_items_tab",
+   "fieldtype": "Tab Break",
+   "label": "Order Items"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "items",
+   "options": "Menu",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "item",
+   "options": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-05 03:40:39.989484",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Restaurant Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

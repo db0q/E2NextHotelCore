@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:full_name",
+ "creation": "2023-12-28 13:53:11.495887",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "phone_number",
+  "guest_type",
+  "room_and_relatives_section",
+  "room_number",
+  "relatives",
+  "important_details_section",
+  "visa",
+  "country",
+  "national_id_number",
+  "passport_id_number",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "passport_id_number",
+   "fieldtype": "Data",
+   "label": "Passport Id number"
+  },
+  {
+   "fieldname": "national_id_number",
+   "fieldtype": "Data",
+   "label": "national id number"
+  },
+  {
+   "fieldname": "visa",
+   "fieldtype": "Data",
+   "label": "visa"
+  },
+  {
+   "fieldname": "relatives",
+   "fieldtype": "Link",
+   "label": "relatives",
+   "options": "Guest"
+  },
+  {
+   "fetch_from": "checking.room_number",
+   "fieldname": "room_number",
+   "fieldtype": "Link",
+   "label": "Room Number",
+   "options": "Room"
+  },
+  {
+   "fieldname": "guest_type",
+   "fieldtype": "Select",
+   "label": "Guest Type",
+   "options": "Single\nGroup\nCompany\nVIP"
+  },
+  {
+   "fieldname": "room_and_relatives_section",
+   "fieldtype": "Section Break",
+   "label": "room and relatives"
+  },
+  {
+   "fieldname": "important_details_section",
+   "fieldtype": "Section Break",
+   "label": "important details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Guest",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-31 15:47:03.034237",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Guest",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

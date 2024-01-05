@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-30 21:04:30.741881",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "room_number",
+  "guest_name",
+  "priority_level",
+  "status",
+  "column_break_bfxn",
+  "description_of_the_issue",
+  "expense_section",
+  "cost",
+  "employee_name",
+  "section_break_xoqv",
+  "naming_series",
+  "date_submited",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Room Number",
+   "options": "Room",
+   "reqd": 1
+  },
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Guest Name",
+   "options": "Guest",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority_level",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority Level",
+   "options": "Urgent\nHigh Priority\nMedium Priority\nLow Priority\nScheduled/Routine\nDeferred\nCosmetic/Non-Essential\nGuest-Requested",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Submitted\nAssigned\nIn Progress\nOn Hold\nCompleted\nClosed\nVerified\nCancelled"
+  },
+  {
+   "fieldname": "column_break_bfxn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description_of_the_issue",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Description of the issue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_xoqv",
+   "fieldtype": "Section Break",
+   "label": "More details"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Request Id",
+   "options": "EHC-MR-HH.-DD.-MM.-"
+  },
+  {
+   "fieldname": "date_submited",
+   "fieldtype": "Datetime",
+   "label": "Date Submited"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Maintenance Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "expense_section",
+   "fieldtype": "Section Break",
+   "label": "Expense"
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "label": "Employee Name",
+   "options": "Employee",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-30 21:18:39.768697",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Maintenance Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

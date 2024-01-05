@@ -1,0 +1,20 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-12-30 16:12:30.205181",
+ "dashboard_name": "E2Next Hotel Core",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2023-12-30 23:45:24.726234",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "E2Next Hotel Core",
+ "owner": "Administrator"
+}

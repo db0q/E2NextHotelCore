@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:EHC-TABRES-{table_type}-{####}",
+ "creation": "2024-01-03 14:31:28.727764",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "table_type",
+  "naming_series",
+  "column_break_bfjd",
+  "details_of_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_of_table",
+   "fieldtype": "Small Text",
+   "label": "Details Of Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "EHC-TABRES-"
+  },
+  {
+   "fieldname": "table_type",
+   "fieldtype": "Select",
+   "label": "Table Type",
+   "options": "Normal\nBeside Window\nPrivate Table\nVIP"
+  },
+  {
+   "fieldname": "column_break_bfjd",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-03 15:35:51.975859",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Restaurant Table Number",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

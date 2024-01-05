@@ -1,0 +1,40 @@
+{
+ "cards": [
+  {
+   "card": "Hotel Rooms"
+  }
+ ],
+ "charts": [
+  {
+   "width": "Half"
+  },
+  {
+   "chart": "Guest Origin Map",
+   "width": "Half"
+  },
+  {
+   "chart": "Length of Stay",
+   "width": "Half"
+  },
+  {
+   "chart": "Reservation Status chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Reservation Channel",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-01-02 18:24:22.531818",
+ "dashboard_name": "Hotel Managment",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-01-02 19:10:59.769006",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Hotel Managment",
+ "owner": "Administrator"
+}

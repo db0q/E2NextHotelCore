@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:type_name",
+ "creation": "2023-12-29 13:52:10.019657",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type_name",
+  "image",
+  "description",
+  "amenities",
+  "item",
+  "rate_per_night",
+  "bed_type",
+  "capacity"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fetch_from": "item.",
+   "fieldname": "amenities",
+   "fieldtype": "Link",
+   "label": "Amenities",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "rate_per_night",
+   "fieldtype": "Data",
+   "label": "Rate Per Night"
+  },
+  {
+   "fieldname": "bed_type",
+   "fieldtype": "Link",
+   "label": "Bed Type",
+   "options": "Bed Type"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-30 21:45:47.665000",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Room Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

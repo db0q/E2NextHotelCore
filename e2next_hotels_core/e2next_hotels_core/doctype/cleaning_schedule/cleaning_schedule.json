@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-30 09:31:41.011975",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "employee_name",
+  "room_number",
+  "amended_from",
+  "checks_section",
+  "validation_checked",
+  "notes_section",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "label": "Employee Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Link",
+   "label": "Room Number",
+   "options": "Room"
+  },
+  {
+   "fieldname": "validation_checked",
+   "fieldtype": "Data",
+   "label": "Validation Checked",
+   "options": "Visual Inspection, Bed Linen Change, Bathroom Cleanliness, Trash Removal, Floor Condition, Amenities Refilled, Room Setup, Electronic Devices, Window and Mirror Cleaning, Odor Control, Room Tagging\n"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cleaning Schedule",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "checks_section",
+   "fieldtype": "Section Break",
+   "label": "Checks"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-30 10:51:44.189723",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Cleaning Schedule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

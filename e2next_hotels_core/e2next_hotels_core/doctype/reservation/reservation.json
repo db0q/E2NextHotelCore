@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:EHC-RES-{DD}-{MM}-20{YY}-{guest}",
+ "creation": "2023-12-30 08:30:58.268852",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "reservation_section",
+  "type",
+  "start_date",
+  "end_date",
+  "room_type",
+  "status",
+  "total_price",
+  "column_break_fdlj",
+  "guest",
+  "guest_type",
+  "age_group",
+  "source"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Reservation Type"
+  },
+  {
+   "fieldname": "guest",
+   "fieldtype": "Link",
+   "label": "Guest",
+   "options": "Guest"
+  },
+  {
+   "fieldname": "guest_type",
+   "fieldtype": "Select",
+   "label": "Guest Type",
+   "options": "Individual Traveler\nCouple\nFamily\nGroup\nBusiness Traveler\nGovernment/Corporate\nLong-Term Stay\nEvent Attendee\nVIP/Guest of Honor\nSpecial Occasion (e.g., Honeymoon, Anniversary)\nTourist\nDay-Use Guest\nPet-Friendly Guest\nAccessible/Disabled Guest\nAirline Crew"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "label": "Room Type",
+   "options": "Room Type"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Pending\nConfirmed\nChecked-In\nChecked-Out\nCancelled\nNo-Show"
+  },
+  {
+   "fieldname": "age_group",
+   "fieldtype": "Select",
+   "label": "Age Group",
+   "options": "Adult\nChild"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "total Price"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "Reservation Source"
+  },
+  {
+   "fieldname": "reservation_section",
+   "fieldtype": "Section Break",
+   "label": "Reservation"
+  },
+  {
+   "fieldname": "column_break_fdlj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-02 18:34:44.109071",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Reservation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

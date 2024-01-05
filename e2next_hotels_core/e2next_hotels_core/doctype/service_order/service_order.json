@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-30 09:10:34.282035",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date_section",
+  "posting_date",
+  "guest",
+  "room_number",
+  "status_and_table_orders_section",
+  "services_table",
+  "status",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date_section",
+   "fieldtype": "Section Break",
+   "label": "Posting Date "
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Datetime",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "guest",
+   "fieldtype": "Link",
+   "label": "Guest",
+   "options": "Guest"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Link",
+   "label": "Room Number",
+   "options": "Guest"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nConfirmed\nIn Progress\nCompleted\nCancelled\nOn Hold\nAwaiting Payment\nScheduled\nDelayed\nPartially Completed\nRejected\nClosed"
+  },
+  {
+   "columns": 3,
+   "fieldname": "services_table",
+   "fieldtype": "Table",
+   "label": "Services Table",
+   "options": "Service Table"
+  },
+  {
+   "fieldname": "status_and_table_orders_section",
+   "fieldtype": "Section Break",
+   "label": "Status and Table orders"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-30 11:12:35.957246",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Service Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

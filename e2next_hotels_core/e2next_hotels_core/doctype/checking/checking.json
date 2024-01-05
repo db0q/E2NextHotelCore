@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:EHC-{MM}-{DD}-{YY}-{type}-{guest}",
+ "creation": "2023-12-30 23:26:12.812435",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "arrived_date",
+  "departure_datetime",
+  "room_number",
+  "guest"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "In\nOut"
+  },
+  {
+   "fieldname": "arrived_date",
+   "fieldtype": "Datetime",
+   "label": "Arrived Date"
+  },
+  {
+   "fieldname": "departure_datetime",
+   "fieldtype": "Datetime",
+   "label": "Departure Datetime"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Link",
+   "label": "Room Number",
+   "options": "Room"
+  },
+  {
+   "fieldname": "guest",
+   "fieldtype": "Link",
+   "label": "Guest",
+   "options": "Guest"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-30 23:32:00.596960",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Checking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

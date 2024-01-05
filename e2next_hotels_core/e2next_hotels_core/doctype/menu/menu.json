@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-04 18:09:52.940512",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "price",
+  "availablty",
+  "item_name",
+  "column_break_vnrt",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Appetizers\nSoups\nSalads\nMain Courses (subcategories: Chicken, Seafood, Beef, Vegetarian, Pasta/Rice, Specialties)\nSide Dishes\nSandwiches\nBeverages (Non-alcoholic and Alcoholic)\nDesserts\nBreakfast\nKids Menu\nSpecials or Chef's Recommendations\nHealthy Options\nLocal Specialties\nAllergen-Free Options\nSeasonal Specials"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "price"
+  },
+  {
+   "fieldname": "availablty",
+   "fieldtype": "Select",
+   "label": "availablty",
+   "options": "Available\nLimited Stock\nSeasonal Special"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "label": "Item Name",
+   "options": "Hotel Items"
+  },
+  {
+   "fieldname": "column_break_vnrt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-05 03:39:11.596546",
+ "modified_by": "Administrator",
+ "module": "E2NEXT Hotels Core",
+ "name": "Menu",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
